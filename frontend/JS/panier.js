@@ -255,7 +255,7 @@ function validationOk() {
 						.then((response) => response.json())
 						.then((json) => {					
 							localStorage.setItem("command", JSON.stringify([json])),
-							location.href = "/confirmation.html"
+							location.href = "../pages/confirmation.html"
 					});
 			}
 	})
