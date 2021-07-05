@@ -9,12 +9,12 @@ fetch("http://localhost:3000/api/teddies")
 			.map(
 				(bear) =>
 					`<div class="container_card box_shadow margin_t"> 
-              <a href="Frontend/pages/produit.html?id=${bear._id}"><img src="${bear.imageUrl}" alt="photo de ${bear.name}" class="teddy_img"></a> 
+              <a href="frontend/pages/produit.html?id=${bear._id}"><img src="${bear.imageUrl}" alt="photo de ${bear.name}" class="teddy_img"></a> 
               <div class="price_container"> 
                   <div class="list_items flex_column"> 
                     <h2 class="price_list_items bold_items">${bear.name}</h2> 
                     <span><span class="price_list_items italic_items"><i class="fas fa-tags"></i> ${numberWithCommas(bear.price)} </span></span>
-                    <span class="price_list_items price_items"><a href="Frontend/pages/produit.html?id=${bear._id}">Voir ce produit</a></span></div></div></div>`)
+                    <span class="price_list_items price_items"><a href="frontend/pages/produit.html?id=${bear._id}">Voir ce produit</a></span></div></div></div>`)
 			.join(" ");
 			feedLocalStoragePost();
 	})
