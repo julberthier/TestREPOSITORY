@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="descripton" content="La boutique favorite de ta boutique favorite ! Toutes les plus belles peluches du monde sont en vente chez Orinoco."/>
+		<link rel="stylesheet" href="Frontend/CSS/style.css" />
+		<link rel="stylesheet" href="Frontend/CSS/style_pp.css" />
+		<link rel="icon" href="Frontend/images/favicon.ico" />
+
+		<!-- FONT AWESOME -->
+
+		<link
+			rel="stylesheet"
+			href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+		/>
+		<title>Orinoco, le site de vente en ligne N°1</title>
+	</head>
+	<body>
+		<!-- HEADER -->
+
+		<header>
+			<nav>
+				<a href="index.html"
+					><img
+						src="Frontend/images/logo.png"
+						class="img_header"
+						alt="Logo du site de vente en ligne Orinoco"
+				/></a>
+			</nav>
+			<a href="Frontend/pages/panier.html"
+				><div class="mobile_card">Panier</div></a
+			>
+		</header>
+
+		<!-- FIN HEADER -->
+
+		<h1 hidden>Orinico</h1>
+
+		<!-- BOUTON PANIER -->
+
+		<div id="drop_card">
+			<div id="red_o"></div>
+			<a href="Frontend/pages/panier.html"
+				><i class="fas fa-shopping-cart glassmorphism"></i
+				><span hidden>Panier</span></a
+			>
+			<div class="dropdown">
+				<div class="dd_cart box_shadow" id="cart">
+					<div id="dd_cart_content"></div>
+				</div>
+			</div>
+		</div>
+
+		<div id="blur_bg"></div>
+
+		<!-- FIN BOUTON PANIER -->
+
+		<!-- CONTAINER CENTRAL -->
+
+		<div id="container_central" class="max_content flex_center">
+			<div class="container_img glassmorphism" id="show_container"></div>
+		</div>
+
+		<!-- FIN CONTAINER CENTRAL -->
+
+		<footer class="flex_center">
+			<div>
+				<span><i class="far fa-copyright"></i> Orinico 2021 </span>
+			</div>
+		</footer>
+
+		<!-- SCRIPTS JAVASCRIPT -->
+
+		<script src="Frontend/JS/index.js"></script>
+		<script src="Frontend/JS/fonction.js"></script>
+	</body>
+</html>

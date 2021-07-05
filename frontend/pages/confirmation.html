@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/style_pp.css" />
+    <link rel="icon" href="../images/favicon.ico" />
+
+        <!-- FONT AWESOME -->
+
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <title>Page de confirmation d'achat</title>
+  </head>
+  <body>
+    <!-- LOGO HEADER -->
+    <header>
+      <a href="/index.html" id="home"><img src="../images/logo.png" class="img_header" alt="Logo du site de vente en ligne Orinoco"/></a>
+    </header>
+    <!-- FIN HEADER -->
+
+    <!-- CONTAINER CENTRAL -->
+    <div id="container_central" class="flex_center">
+      <div class="glassmorphism container_img">
+        <a href="/index.html" id="back_button_link"
+          ><i class="fas fa-chevron-circle-left"></i><span hidden>Bouton de retour</span></a> 
+
+          <div class="thank_conf flex_column flex_center br_5 box_shadow">
+            <h1 class="bold_tit_conf">
+          Merci de votre commande sur notre site !
+            </h1>
+
+            <div class="flex_column flex_center conf_recap">
+             <span>Numero de commande : <span id="command_id"></span></span> 
+            <span>Montant : <span id="final_price_cart"></span></span>
+          </div>           
+            
+          </div>
+
+        
+      </div>
+      </div>
+    <!--FIN CONTAINER CENTRAL-->
+
+    <!-- FOOTER -->
+    <footer class="flex_center">
+      <div>
+        <span><i class="far fa-copyright"></i> Orinico 2021 </span>       
+      </div>
+    </footer>
+
+    <!-- FIN DU FOOTER -->
+
+    <!-- SCRIPTS JAVASCRIPT -->
+
+    <script src="/frontend/JS/confirmation.js"></script>
+
+  </body>
+</html>

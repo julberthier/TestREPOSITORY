@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../CSS/style.css" />
+		<link rel="stylesheet" href="../CSS/style_pp.css" />
+		<link rel="icon" href="../images/favicon.ico" />
+
+		<!-- FONT AWESOME -->
+
+		<link
+			rel="stylesheet"
+			href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+		/>
+		<title>Votre panier</title>
+	</head>
+
+	<body>
+		<!-- LOGO HEADER -->
+		<header>
+			<a href="/index.html"
+				><img
+					src="../images/logo.png"
+					class="img_header"
+					alt="Logo du site de vente en ligne Orinoco"
+			/></a>
+		</header>
+		<!-- FIN HEADER -->
+
+		<h1 id="h1_center">Récapitulatif de votre panier</h1>
+
+		<!-- CONTAINER CENTRAL -->
+		<div id="container_central" class="flex_center">
+			<div class="glassmorphism container_img mt_3">
+				<a href="/index.html" id="back_button_link">
+					<i class="fas fa-chevron-circle-left">
+					<span id="cont_btn">Continuer mes achats</span></i>
+				</a>
+
+				<div id="container_panier">
+					<div class="panier_grid">
+						<div
+							class="central_panier box_shadow grid_design br_5"
+							id="centralpanier">
+						</div>
+
+						<div class="total_panier flex-center_grid box_shadow grid_design br_5">
+							<span class="totalprice_grid">
+								<span>Produits</span>
+								<span id="item_price">0€</span>
+							</span>
+
+							<span class="totalprice_grid">
+								<span>Livraison</span>
+								<span>Offerte</span>
+							</span>
+
+							<span class="totalprice_grid margin_total">
+								<span>TOTAL</span>
+								<span id="price_total_panier">0 €</span>
+							</span>
+
+							<span
+								><button class="btn_panier" id="send_command">
+									Valider ma commande
+								</button>
+								<button class="btn_panier" id="delete_card">
+									Vider le panier
+								</button>
+							</span>
+						</div>
+
+						<div class="bdr_panier flex-center box_shadow grid_design br_5">
+								<input
+									type="text"
+									id="reduc_panier"
+									placeholder="Mon bon de réduction"
+								/>
+								<label for="reduc_panier" hidden>bon de reduction</label>
+								<button class="btn_bdr">Ajouter</button>
+						</div>
+
+						<div class="ask_panier flex-center_grid box_shadow grid_design br_5">
+							Une question ? Contactez nous par téléphone !
+						</div>
+						<div class="ship_panier flex-center_grid box_shadow grid_design br_5">
+							<span><i class="fas fa-shipping-fast"></i> Livraison rapide garantie</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="global_form_des br_5 box_shadow" id="hide_conf_box">
+				<button id="close" class="btn_close">
+					<i class="fas fa-times"></i>
+					<span hidden>bouton de fermeture</span>
+				</button>
+
+				<!-- FORMULAIRE DE CONFIRMATION DE COMMANDE -->
+				<span>Tous les champs du formulaire doivent être remplis !</span>
+
+				<form class="form_design">
+					<div>
+						<input
+							type="text"
+							name="name"
+							id="name"
+							class="mg10"
+							placeholder="Nom de famille"
+							minlength="2"
+							required
+							>
+						<label for="name" hidden>Nom de famille</label>
+					</div>
+
+					<div>
+						<input
+							type="text"
+							name="firstname"
+							id="firstname"
+							class="mg10"
+							placeholder="Prenom"							
+							minlength="2"
+							required
+						>
+						<label for="firstname" hidden>Prenom</label>
+					</div>
+
+					<div>
+						<input
+							type="text"
+							name="adress"
+							id="adress"
+							class="mg10"
+							placeholder="Adresse"
+							minlength="6"
+							required
+						>
+						<label for="adress" hidden>Adresse</label>
+					</div>
+
+					<div>
+						<input
+							type="text"
+							name="city"
+							id="city"
+							class="mg10"
+							placeholder="Ville"
+							required
+						>
+						<label for="city" hidden>Ville</label>
+					</div>
+
+					<div>
+						<input
+							type="email"
+							name="mail"
+							id="mail"
+							class="mg10"
+							placeholder="Adresse email"
+							minlength="6"
+							maxlength="64"
+							required
+						>
+						<label for="mail" hidden>Adresse email</label>
+					</div>
+
+					<div class="submit_conf">
+						<button
+							type="button"
+							class="validate_btn br_5 btn_translate"							
+							id="validateConf">
+							Valider la commande
+						</button>
+					</div>
+				</form>
+			</div>
+
+			<!-- POP UP SI PANIER VIDE -->
+
+			<div class="box_shadow pop_empty br_5" id="empty_popup">
+				<i class="fas fa-shopping-cart empty_pop_cart"></i>
+				<span>
+					Votre panier est vide, vous devez le remplir afin de valider votre
+					commande.
+				</span>
+			</div>
+
+			<div id="blur_bg"></div>
+		</div>
+
+		<!--FIN CONTAINER CENTRAL-->
+
+		<!-- FOOTER -->
+		<footer class="flex_center">
+			<div>
+				<span><i class="far fa-copyright"></i> Orinico 2021 </span>
+			</div>
+		</footer>
+
+		<!-- FIN DU FOOTER -->
+
+		<!-- SCRIPTS JAVASCRIPT -->
+		<script src="/frontend/JS/panier.js"></script>
+	</body>
+</html>
